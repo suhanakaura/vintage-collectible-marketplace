@@ -1,0 +1,20 @@
+.category-item{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 20px 0px 15px;
+    margin-top: 180px;
+    margin-bottom: 20px; 
+}
+
+@media only screen and (max-width: 1024px) {
+    .category-item{
+    margin-top:300px;
+    }
+}
+@media (min-width: 392px) and (max-width: 800px){
+    .category-item{
+        margin-top:300px;
+        }
+}

@@ -1,0 +1,134 @@
+.navbar{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 0 1px 3px -2px black;
+    background-color:white;
+    z-index:1000;
+}
+.nav-logo{
+    display: flex;
+    justify-content: center;
+}
+.nav-menu{
+    display: flex;
+    color:black;
+    align-items: center;
+    list-style: none;
+    gap:30px;
+    color:#626262;
+    font-size:17px;
+    font-weight:400;
+}
+
+.nav-menu li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:3px;
+    cursor:pointer;
+} 
+.nav-menu hr{
+    border: none;
+    width:90%;
+    height:3px;
+    border-radius: 10px;
+    background: #FF4141;
+}
+.nav-login-cart{
+    display:flex;
+    align-items:center;
+    gap:30px;
+    margin-left:auto;
+    margin-top:-15px;
+}
+.nav-login-cart button{
+    width: 145px;
+    height: 55px;
+    outline:none;
+    border:1px solid #7a7a7a;
+    border-radius:75px;
+    color:#515151;
+    font-size: 16px;
+    font-weight: 500;
+    background: white;
+    cursor:pointer;
+}
+.nav-login-cart button:active{
+    background: #f3f3f3;
+}
+
+.nav-cart-count{
+    width:22px;
+    height:22px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30px;
+    margin-left:-45px;
+    border-radius:11px;
+    font-size:14px;
+    background: red;
+    color:white;
+}
+/* @media(max-width:1230px){
+    .navbar{
+        padding: 12px 50px;
+    }
+    .nav-logo img{
+        width:150px;
+    }
+    
+} */
+
+@media only screen and (max-width: 1024px) {
+    .navbar {
+        flex-direction: row;
+        padding: 20px 0; 
+    }
+
+    .nav-menu{
+        flex-direction: column; 
+        gap: 10px; 
+    }
+
+    .nav-menu li {
+        flex-direction: row; 
+    }
+
+    .nav-menu hr {
+        width: 70%; 
+    }
+    .nav-login-cart{
+        justify-content: center;
+    }
+    .nav-logo{
+        text-align: center;
+    }
+}
+@media (min-width: 392px) and (max-width: 800px){
+    .nav-logo{
+        width:150px;
+        text-align: center;
+    }
+    .navbar {
+        padding:8px;
+    }
+
+    .nav-menu {
+        gap: 9px; 
+    }
+
+    .nav-menu li {
+        flex-direction: row; 
+    }
+
+    .nav-menu hr {
+        width: 60%; 
+    }
+}
+

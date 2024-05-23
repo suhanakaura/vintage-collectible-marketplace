@@ -1,0 +1,101 @@
+.hero {
+    margin-top: 150px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* position: fixed; */
+    /* overflow-y: scroll; */
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../Assets/bgimg4.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5; 
+    z-index: -1;
+}
+
+.hero-content {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    line-height: 68px;
+    gap:20px;
+    opacity:0;
+    animation: fadeIn 3s ease forwards 0.4s;
+    height:60vh;
+}
+
+.hero h2 {
+    color: black;
+    font-size: 53px;
+    opacity: 1;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:300px;
+    height:50px;
+    border:3px solid black;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor:pointer;
+}
+.button:hover{
+    background-color: rgba(128, 128, 128, 0.342);
+
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    .hero{
+    margin-top:200px;
+    width: 100vw;
+    height: 100vh;
+}
+
+.hero h2 {
+    color: black;
+    font-size: 26px;
+    opacity: 1;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+}
+@media (min-width: 392px) and (max-width: 800px){
+    .hero{
+        margin-top:200px;
+        width: 100vw;
+        height: 100vh;
+        }
+
+        .hero h2 {
+            color: black;
+            font-size: 26px;
+            opacity: 1;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+}
